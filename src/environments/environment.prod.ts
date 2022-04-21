@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api: ''
+  api: 'https://edacy-mz-rss.herokuapp.com'
 };
