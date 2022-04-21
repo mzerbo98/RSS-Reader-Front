@@ -1,27 +1,18 @@
-# NgFaunadbNetlifyServerlessFunctions
+# Affichage d'Articles RSS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Ce projet a été créé à l'aide d'Angular et de quelques modules.
+Il s'appuie sur un serveur Nodejs qui est [là](https://github.com/mzerbo98/RSS-Reader-Server).
+Une version live de l'application est disponible [ici](https://edacy-mz-rss.herokuapp.com/)
 
-## Development server
+## Prérequis et lancement
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Afin de pouvoir lancer le projet, voici ce qu'il faut : 
+* Avoir un environnement Nodejs prêt avec npm
+* Installer les dépendances avec la commande `npm install`
+* S'assurer que le serveur associé est installé et lancé
+* Lancer l'application avec la commande `ng serve` et y accéder sur `localhost:4200`
+* Pour faire un build, il faut utiliser la commande `ng build`
 
-## Code scaffolding
+## Aide supplémentaire
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Pour de l'aide, utilisez la commande `ng help` Aller sur [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-faunadb-netlify-serverless-functions": {
+    "articles-rss": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-faunadb-netlify-serverless-functions",
+            "outputPath": "dist/articles-rss",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-faunadb-netlify-serverless-functions:build"
+            "browserTarget": "articles-rss:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng-faunadb-netlify-serverless-functions:build:production"
+              "browserTarget": "articles-rss:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-faunadb-netlify-serverless-functions:build"
+            "browserTarget": "articles-rss:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ng-faunadb-netlify-serverless-functions:serve"
+            "devServerTarget": "articles-rss:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ng-faunadb-netlify-serverless-functions:serve:production"
+              "devServerTarget": "articles-rss:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "ng-faunadb-netlify-serverless-functions"
+  "defaultProject": "articles-rss"
 }
