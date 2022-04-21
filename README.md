@@ -2,7 +2,10 @@
 
 Ce projet a été créé à l'aide d'Angular et de quelques modules.
 Il s'appuie sur un serveur Nodejs qui est [là](https://github.com/mzerbo98/RSS-Reader-Server).
+
 Une version live de l'application est disponible [ici](https://edacy-mz-rss.herokuapp.com/)
+
+Pour lire un flux RSS, il suffit de mettre son URL dans le champ de texte présent dans la page. Par défaut, il pointe vers le flux RSS du journal le Monde
 
 ## Prérequis et lancement
 
