@@ -1,0 +1,22 @@
+<div class="row pt-2">
+  <input type="text" placeholder="Adresse du flux RSS" #url>
+  <button type="button" (click)="read(url.value)">Lire</button>
+  <br>
+  <span class="card-text card-news-title display-5">Flux : {{feed.title}}</span>
+  <div class="col-12">
+      <div class="card" *ngIf="feed">
+      <div class="card-body text-left card-box p-0">
+        <div *ngFor="let o of feed.items | paginate: { itemsPerPage: 10, currentPage: p }">
+          <div class="news-text-contain p-3">
+              <div class="card-text card-contain d-block"> <span style="font-weight: bold;">Titre : </span> {{o.title}}</div>
+              <p>{{o.contentSnippet}}</p>
+              <span  style="font-weight: bold;" class="card-text card-contain d-block"><a href="{{o.link}}">Lien vers l'article</a></span>
+              <br>
+              <span class="text-muted d-inline card-subtext"> Date : {{o.isoDate | date : 'fullDate': undefined : 'fr'}}</span>
+            </div>
+        </div>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>
